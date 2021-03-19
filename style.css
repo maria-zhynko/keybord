@@ -1,0 +1,139 @@
+body{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url("window.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+button{
+    font-size: 14px;
+    transition:background-color 0.3s ease-in-out;
+}
+.wrap{
+    display: none;
+}
+.keybord, .call-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first_line,.second_line,.third_line,.numbers,.fourth_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media screen and (min-width:1280px){
+    button{
+        width: 5em;
+        height: 5em;
+        background-color: lightgreen;
+        border: 0.1em solid lightgreen;
+        outline: none;
+    }
+    .use-keyboard-input{
+        background-color: rgb(192, 192, 192);
+        width: 50em;
+        height: 17em;
+        border: lime 0.1em solid;
+        padding: 0.5em;
+        margin-bottom: 1.5em;
+        font-size: 1.2em;
+        outline: none;
+    }
+    .space{
+        width: 25em;
+        height: 5em;
+    }
+    .arrow{
+        width: 2em;
+    }
+    #call-keybord{
+        width: 3em;
+        height: 3em;
+        background-color: transparent;
+        border: none;
+    }
+}
+@media screen and (min-width:750px) and (max-width:1279px){
+    button{
+        width: 3.7em;
+        height: 3em;
+        background-color: lightgreen;
+        border: 0.1em solid lightgreen;
+        outline: none;
+    }
+    .use-keyboard-input{
+        background-color: rgb(192, 192, 192);
+        width: 38em;
+        height: 15em;
+        border: lime 0.1em solid;
+        padding: 0.5em;
+        margin-bottom: 2em;
+        font-size: 1em;
+        outline: none;
+        
+    }
+    .space{
+        width: 18.5em;
+        height: 3em;
+    }
+    .arrow{
+        width: 1.5em;
+    }
+    #call-keybord{
+        width: 3em;
+        height: 3em;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:749px){
+    button{
+        width: 3.6em;
+        height: 3em;
+        background-color: lightgreen;
+        border: 0.1em solid lightgreen;
+        outline: none;
+        font-size: 0.6em;
+    }
+    .use-keyboard-input{
+        background-color: rgb(192, 192, 192);
+        width: 20em;
+        height: 8em;
+        border: lime 0.1em solid;
+        padding: 0.5em;
+        margin-bottom: 2em;
+        font-size: 1em;
+        outline: none;
+    }
+    .space{
+        width: 18em;
+        height: 3em;
+    }
+    .arrow{
+        width: 1em;
+    }
+    #call-keybord{
+        width: 3em;
+        height: 3em;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+button:hover{
+    background-color: lime;
+    transition: background-color 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    transform: scale(1.2);
+}
